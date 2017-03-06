@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="QkW-0H-LMc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tip Calculator-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TipCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tBh-1J-L5C"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Mp-NY-eUF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="gjx-7g-O4k">
+                                <rect key="frame" x="16" y="238" width="339" height="29"/>
+                                <segments>
+                                    <segment title="15%"/>
+                                    <segment title="20%"/>
+                                    <segment title="25%"/>
+                                </segments>
+                                <color key="tintColor" cyan="0.89900716145833337" magenta="0.45987955729166669" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <connections>
+                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="gA0-wY-ge9"/>
+                                </connections>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ArK-MJ-2om">
+                                <rect key="frame" x="0.0" y="296" width="375" height="371"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rec-9U-hFb">
+                                        <rect key="frame" x="15" y="17" width="107" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" cyan="0.35712348090277779" magenta="0.0" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tka-w1-g7q">
+                                        <rect key="frame" x="15" y="85" width="107" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" cyan="0.363525390625" magenta="0.0" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCt-AU-VQO">
+                                        <rect key="frame" x="104" y="85" width="255" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <color key="textColor" cyan="0.35712348090277779" magenta="0.0" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QiR-2l-HGe">
+                                        <rect key="frame" x="104" y="17" width="255" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <color key="textColor" cyan="0.35712348090277779" magenta="0.0" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" cyan="0.90218098958333337" magenta="0.45955403645833331" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="top" placeholder="$" textAlignment="right" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Vj1-Ay-BIM">
+                                <rect key="frame" x="-2" y="83" width="375" height="113"/>
+                                <color key="backgroundColor" cyan="0.35506808923350441" magenta="0.00017728656530380249" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <color key="textColor" cyan="0.90107327699661255" magenta="0.45525845554139877" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="editingChanged" id="Ztc-8n-gwx"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" cyan="0.35609890520572662" magenta="0.00017728656530380249" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="gjx-7g-O4k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="0Ow-6q-AzU"/>
+                            <constraint firstItem="ArK-MJ-2om" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5qF-Mk-hal"/>
+                            <constraint firstAttribute="trailing" secondItem="ArK-MJ-2om" secondAttribute="trailing" id="Bd3-iL-3Mz"/>
+                            <constraint firstAttribute="trailing" secondItem="gjx-7g-O4k" secondAttribute="trailing" constant="20" id="DfR-wp-oE7"/>
+                            <constraint firstItem="Vj1-Ay-BIM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Lbb-yz-bd2"/>
+                            <constraint firstItem="gjx-7g-O4k" firstAttribute="top" secondItem="Vj1-Ay-BIM" secondAttribute="bottom" constant="30" id="NXQ-0V-khD"/>
+                            <constraint firstItem="0Mp-NY-eUF" firstAttribute="top" secondItem="ArK-MJ-2om" secondAttribute="bottom" id="S2Y-D2-r03"/>
+                            <constraint firstItem="ArK-MJ-2om" firstAttribute="top" secondItem="gjx-7g-O4k" secondAttribute="bottom" constant="30" id="Vj4-a0-fef"/>
+                            <constraint firstItem="Vj1-Ay-BIM" firstAttribute="top" secondItem="tBh-1J-L5C" secondAttribute="bottom" constant="40" id="Wyd-Sb-iEK"/>
+                            <constraint firstAttribute="trailing" secondItem="Vj1-Ay-BIM" secondAttribute="trailing" constant="5" id="sib-u3-UVl"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="gfP-Pm-meb" appends="YES" id="ZGn-3S-hP1"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tip Calculator" id="D7g-ba-35b">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="r64-3X-wE2">
+                            <connections>
+                                <segue destination="VKL-oM-qYc" kind="push" id="SMe-wf-orJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="billField" destination="Vj1-Ay-BIM" id="c9R-Bc-xWC"/>
+                        <outlet property="resultsView" destination="ArK-MJ-2om" id="rDl-w9-wYb"/>
+                        <outlet property="tipLabel" destination="QiR-2l-HGe" id="ux3-5H-xdF"/>
+                        <outlet property="tipPercentageField" destination="gjx-7g-O4k" id="v7c-P7-ITP"/>
+                        <outlet property="totalLabel" destination="iCt-AU-VQO" id="Vzp-g8-BSd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="gfP-Pm-meb"/>
+            </objects>
+            <point key="canvasLocation" x="411.5" y="154.5"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="eG2-2N-NCR">
+            <objects>
+                <viewController id="VKL-oM-qYc" customClass="SettingsViewController" customModule="TipCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CM9-se-8It"/>
+                        <viewControllerLayoutGuide type="bottom" id="RrP-ao-3ul"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xnh-GZ-sb9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Default Tip Percentage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YiT-rt-ikb">
+                                <rect key="frame" x="16" y="88" width="270" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cyan="0.89900716150000004" magenta="0.45987955730000002" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="WhD-tr-4Ts">
+                                <rect key="frame" x="16" y="138" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="15%"/>
+                                    <segment title="20%"/>
+                                    <segment title="25%"/>
+                                </segments>
+                                <color key="tintColor" cyan="0.89900716150000004" magenta="0.45987955730000002" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <connections>
+                                    <action selector="defaultTipSelected:" destination="VKL-oM-qYc" eventType="valueChanged" id="ayT-6m-ils"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" cyan="0.35712348090000001" magenta="0.0" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                        <color key="tintColor" cyan="0.35712348090000001" magenta="0.0" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bfC-p1-hwd"/>
+                    <connections>
+                        <outlet property="defaultTipField" destination="WhD-tr-4Ts" id="zsk-QD-qBZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xX4-Vc-68c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="812.5" y="154.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7EZ-h2-BQE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QkW-0H-LMc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="i3S-li-kY9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="A0k-JO-H4M"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="toD-Ub-ejE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-49.5" y="154.5"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>
